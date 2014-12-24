@@ -9,5 +9,9 @@
         <param-name>AppLevelParam</param-name>
         <param-value>App level parameter</param-value>
     </context-param>
-    
+
+    <error-page>
+        <location>/errorpage.jsp</location>
+    </error-page>
+
 </web-app>

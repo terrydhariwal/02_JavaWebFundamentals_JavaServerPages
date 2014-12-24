@@ -24,7 +24,7 @@
           <tab heading="Search">
             <div>
               <p>FORM</p>
-              <form action="helloworld" id="helloworld" method="post">
+              <form action="home" method="post">
                 <p><input name="name" type="text" /></p>
                 <p>
                   <select name="response">
