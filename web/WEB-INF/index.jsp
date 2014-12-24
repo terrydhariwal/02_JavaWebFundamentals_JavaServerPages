@@ -18,13 +18,13 @@
     <h1>Home</h1>
 
     <div class="row-fluid">
-      <div class="col-md-3">Sidebar</div>
+      <div class="col-md-3"></div>
       <div class="col-md-9">
         <tabset>
           <tab heading="Search">
             <div>
               <p>FORM</p>
-              <form action="home" method="post">
+              <form action="/" method="post">
                 <p><input name="name" type="text" /></p>
                 <p>
                   <select name="response">
