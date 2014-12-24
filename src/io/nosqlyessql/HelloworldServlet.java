@@ -64,13 +64,16 @@ public class HelloworldServlet extends HttpServlet {
             }
         }
         else {
-            //response.sendRedirect("/"); //redirect form back to self if no name value
-
-            //This error handling example is for example purposes only
-            //Obviously in the context of form submission we would have client site validation and therefore this wouldn't be called
-            //but this is a good demo of how to setup error handling on the server side
-            throw new ServletException("A name should be entered.");
-
+            if(requestType.equals("GET")) {
+                //response.sendRedirect("/WEB-INF/index.jsp"); //redirect form back to self if no name value
+                getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+            }
+            else {
+                //This error handling example is for example purposes only
+                //Obviously in the context of form submission we would have client site validation and therefore this wouldn't be called
+                //but this is a good demo of how to setup error handling on the server side
+                throw new ServletException("A name should be entered.");
+            }
         }
     }
 }
