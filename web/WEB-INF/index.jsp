@@ -22,9 +22,9 @@
       <div class="col-md-9">
         <tabset>
           <tab heading="Search">
-            <div>
-              <p>FORM</p>
-              <form action="/" method="post">
+            <div class="container">
+              <h2>Hello world form</h2>
+              <form action="/" method="post"> <!-- Note the browser has no understanding of the application root, therefore, "/" is relative to the serverhost -->
                 <p><input name="name" type="text" /></p>
                 <p>
                   <select name="response">
