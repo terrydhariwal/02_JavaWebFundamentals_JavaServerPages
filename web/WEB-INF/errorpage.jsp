@@ -24,7 +24,7 @@
                     <tab heading="Search">
                         <div class="container">
                             <h2>Hello world form</h2>
-                            <form action="/" method="post"> <!-- Note the browser has no understanding of the application root, therefore, "/" is relative to the serverhost -->
+                            <form action="/home" method="post"> <!-- Note the browser has no understanding of the application root, therefore, "/" is relative to the serverhost -->
                                 <p><input name="name" type="text" /></p>
                                 <p>
                                     <select name="response">
